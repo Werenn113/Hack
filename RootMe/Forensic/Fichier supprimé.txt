@@ -1,0 +1,8 @@
+1ère solution :
+    - on monte avec OSFMount
+    - avec Glary, on récupère le fichier supprimé
+    - on analyse les métadonnées
+
+2ème solution :
+    - foremost usb.image
+    - exiftool de l'image extraite
