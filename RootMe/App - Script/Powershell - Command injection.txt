@@ -1,0 +1,5 @@
+Solution :
+    - on tente une sqli, ça marche pas
+    - on tente un ";" et ça marche
+    - on vérifie avec "; ls", on a le retour de la commande
+    - on a plus qu'a faire "; cat .passwd"
