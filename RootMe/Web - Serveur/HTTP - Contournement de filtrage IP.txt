@@ -1,0 +1,3 @@
+Solution :
+    - on intercepte avec burp
+    - on rajoute : X-Forwarded-For: 192.168.1.1
