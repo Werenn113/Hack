@@ -1,0 +1,3 @@
+Solution : 
+    - on extrait le hash - on le met dans le fichier hash.txt dans ce format : M$username#hash 
+    - john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt --format=mscash
