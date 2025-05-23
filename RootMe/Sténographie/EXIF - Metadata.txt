@@ -1,0 +1,4 @@
+Solution :
+    - exiftool de l'image
+    - on rentre les coordonnées sur maps
+    - on a la ville
