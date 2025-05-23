@@ -1,0 +1,3 @@
+Solution : 
+    - on extrait le hash
+    - john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt --format=NT (ça n'a pas marché mais je ne sais pas pourquoi)
