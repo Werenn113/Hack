@@ -1,0 +1,5 @@
+Solution:
+    - on comprends vite que la commande est ping 127.0.0.1
+    - donc si on rajoute un "; ls" le serveur va faire : ping 127.0.0.1; ls
+    - on l'observe bien puisqu'on voit index.php après le prompt du ping
+    - on trouve le flag très rapidement
