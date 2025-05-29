@@ -1,0 +1,5 @@
+En inspectant le code source des boutons, on voit un lien vers un site et un paramètre h avec une string.
+On vérifier sur le site "hash type identifier" le type de hashage, c'est du md5.
+Avec de l'intuition on suppose que la lien hashé donne le paramètre h (on peut vérifier avec : echo -n "https://facebook.com" | md5sum)
+
+On change donc un lien et le paramètre et on obtient le flag. Il est affiché sur une trop courte durée (redirection), avec burp on peut arrêter la redirection
