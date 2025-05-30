@@ -1,0 +1,8 @@
+On lance radare2 en mode debug : radare2 -d ./ch25.bin
+On analyse le code de la fonction main avec radare2 : pdf @ main
+On observe qu'un des jumps mène à la string : "Password incorrect"
+On rentre les arguments du programme : e dbg.args="toto"
+On relance l’exécution : doo
+On place un breakpoint sur cette adresse : db 0x8048be5
+On continue l'exécution : dc
+On entre dans un mode bizarre : V!, on copie la valeur dans la stack
