@@ -1,0 +1,1 @@
+On converti la chaîne hex en ascii. On prends l'authorization token et on le decode
