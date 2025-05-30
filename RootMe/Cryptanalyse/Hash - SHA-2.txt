@@ -1,0 +1,2 @@
+Le password est en hashé en SHA256, donc le hash contient 64 caractères, or le fichier en contient 65, on supprime le k en trop.
+On crack le mdp et on le hash en sha1
