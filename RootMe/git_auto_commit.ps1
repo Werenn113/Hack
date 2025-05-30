@@ -10,7 +10,7 @@ if ($lastFile) {
     # Faire le commit avec le message demandé
     git commit -m "RootMe - $filename"
     # Pousser sur le dépôt distant
-    # git push
+    git push
 }
 else {
     Write-Host "Aucun fichier ajouté."
