@@ -1,0 +1,1 @@
+On ouvre le fichier sur dotPeek et après 5s de lecture, le password est trouvé
