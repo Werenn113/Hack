@@ -1,0 +1,1 @@
+On ouvre le .exe dans ghidra, on cherche les chaîne, on regarde dans quelle fonction la chaîne "wrong password" est défini, on lit la fonction pour trouver le code.
