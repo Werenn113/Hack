@@ -1,0 +1,1 @@
+On analyse la fonction main dans radare. On voit que le test ce fait sur la variable "var_8h", on lit plus haut son contenu qui est affiché en clair dans les commentaires.
