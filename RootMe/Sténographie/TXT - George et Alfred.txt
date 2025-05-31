@@ -1,0 +1,1 @@
+Il faut lire le premier paragraphe une ligne sur 2. Pour les deux autres, les premiers mots de chaque lignes.
