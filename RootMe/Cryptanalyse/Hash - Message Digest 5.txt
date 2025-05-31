@@ -1,0 +1,1 @@
+john --wordlist=/usr/share/wordlists/rockyou.txt ch2.txt --format=Raw-MD5
