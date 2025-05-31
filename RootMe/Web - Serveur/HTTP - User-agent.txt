@@ -1,0 +1,1 @@
+On change le user agent dans burp par "admin".
