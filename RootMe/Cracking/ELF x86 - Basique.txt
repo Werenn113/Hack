@@ -1,0 +1,1 @@
+On analyse la fonction main avec radare. On voit qu'il y a deux test, l'un pour le username, l'autre pour le password. Ils sont écrit en clair dans les commentaires
