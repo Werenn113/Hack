@@ -1,0 +1,1 @@
+On voit dans le code que la valeur entrée par le user est comparé à la valeur de "unscape(pass)", on a juste à faire la même chose.
