@@ -1,0 +1,1 @@
+On prends la valeur de la variable pass et on l'exécute plusieurs fois.
