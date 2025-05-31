@@ -1,0 +1,2 @@
+Ici la requête admin ne filtre pas tous les types de requête (POST, GET, ...) avec OPTION ça marche :
+    curl --request OPTIONS http://challenge01.root-me.org/realiste/ch3/admin/
