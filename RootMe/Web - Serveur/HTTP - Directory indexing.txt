@@ -1,0 +1,1 @@
+Dans le code source on voit la page /admin/pass.html, c'est un prank. Mais en allant voir dans /admin, on trouve le mdp
