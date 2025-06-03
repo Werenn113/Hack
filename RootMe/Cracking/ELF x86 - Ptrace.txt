@@ -1,0 +1,6 @@
+On run le prog en mode debug de radare. On voit qu'il y a une sécurité anti-debug, on va donc la contourner.
+On analyse la fonction main, on place un breakpoint sur l'adresse juste après : db %addr%
+On change le registre eax (car le test se fait sur eax) pour la valeur de 0 (go internet) : dr eax=0
+On cherche l'instruction qui permet de vérifier le mdp (cmp), on note l'adresse et on place un breakpoint.
+Un fois le breakpoint atteint, on affiche le registre al (résultat de cmp) : dr al et on voit le code hexadécimal de la lettre.
+Le seul problème c'est que le test ce fait pour chaque caractère, donc il faut refaire ça pour chaque caractère
