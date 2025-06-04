@@ -1,0 +1,1 @@
+On analyse la fonction main dans radare2. On voit un call ebx, on break dessus et on regarde le contenu de edx (dr edx), on affiche la fonction (pdf @ %addr%). On voit un test suivi d'un jne. En regardant les fonctions appelées dans le jne, on voit que c'est bien ce test qui vérifie le mdp. On change donc le jne par un je : s %addr du jne%; wa je 0x804870f
