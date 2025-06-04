@@ -1,0 +1,1 @@
+On follow le stream TCP, on decode le header authorization
