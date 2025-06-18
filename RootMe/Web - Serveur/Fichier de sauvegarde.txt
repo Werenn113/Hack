@@ -1,0 +1,2 @@
+On scan le site : dirb http://challenge01.root-me.org/web-serveur/ch11/index.php /usr/share/wordlists/dirb/mutations_common.txt -t
+Et on lit le fichier qu'on obtient
