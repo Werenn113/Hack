@@ -1,0 +1,1 @@
+Dans le code source, il y a une fonction obfusquée, on enlève les 2 dernières parenthèses et on ajoute un .toString().
