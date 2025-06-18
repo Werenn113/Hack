@@ -1,0 +1,1 @@
+Le TTL suffisant pour atteindre la machine est celui utilisé dans le premier paquet qui a obtenu une réponse
