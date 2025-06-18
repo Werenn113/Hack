@@ -1,0 +1,1 @@
+Dans burpsuite, on change le GET en une méthode non sécurisée, par exemple OPTIONS
