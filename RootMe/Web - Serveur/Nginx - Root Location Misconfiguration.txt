@@ -1,0 +1,5 @@
+La ligne root /etc/nginx; fait que toute URL est concaténée avec /etc/nginx pour former un chemin local. Donc la route HTTP /conf.d/default.conf devient le fichier système /etc/nginx/conf.d/default.conf.
+
+Donc en faisant un curl http://challenge01.root-me.org:59093/conf.d/default.conf on obtient le fichier de conf. 
+
+Pour corriger ce probleme il faudrait faire ça : root /usr/share/nginx/html;
