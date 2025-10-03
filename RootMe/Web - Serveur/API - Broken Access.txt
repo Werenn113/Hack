@@ -1,0 +1,1 @@
+C'est simple, un endpoint /api/user/{id} on test l'id de l'admin (1) et on a le flag. Avec burpsuite c'est facile.
