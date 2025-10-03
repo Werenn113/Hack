@@ -1,0 +1,3 @@
+Ici il faut filtrer "kerberos" pour comprendre un peu ce qu'il se passe. Mais avec l'outil Krb5RoastParser on peut extraire divers hash (as_req). On les passe dans hashcat et on obtient le mdp.
+
+Pour le flag : RM{username@domaine:mdp} tout en miniscule
