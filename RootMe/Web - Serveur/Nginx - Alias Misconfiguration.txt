@@ -1,0 +1,3 @@
+En regardant dans le code source on voit un commentaire qui parle du dossier /assets/
+
+On cherche sur internet, on trouve une faille connue. On l'exploite comme ça : http://challenge01.root-me.org:59092/assets../
