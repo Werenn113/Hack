@@ -1,0 +1,3 @@
+Pour lister les fichiers on peut faire list() or ça ne marche pas, un peu de recherche et on apprend que dir() fait pareil et il marche ! 
+
+Il n'y a plus qu'a se déplacer avec setwd() et a lire le fichier lines <- readLines("flag.txt"); print(lines)
