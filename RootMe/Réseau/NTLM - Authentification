@@ -1,0 +1,1 @@
+Même principe que "Kerberos - Authentification", on extrait le hash avec un outil qu'on trouve en ligne NTLMRawUnhide.py et on le passe dans john
