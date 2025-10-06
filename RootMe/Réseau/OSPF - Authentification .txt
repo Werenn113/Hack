@@ -1,0 +1,4 @@
+On analyse le fichier avec wireshark, on voit que les clés sont hashées. 
+On utilise ettercap pour les extraire : ettercap -Tqr ospf_authentication_hash.pcapng > ospf_hashes.txt 
+
+Après JTR avec le format net-md5
